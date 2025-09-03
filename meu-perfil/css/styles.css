@@ -16,12 +16,12 @@ body {
 }
 ::selection {
 	color: #fff;
-	background: #FF7A00;
+	background: #ea00ff;
 }
 
 ::-moz-selection {
  color: #fff;
- background: #FF7A00;
+ background: #ea00ff;
 }
 p {
 	color: #858585;
@@ -58,7 +58,7 @@ p {
 	background: rgba(255,255,255,0.35);
 }
 a {
-	color: #FF7A00;
+	color: #ea00ff;
 	text-decoration: none;
 	text-shadow: none;
 	-webkit-transition: all 0.2s linear;
@@ -76,10 +76,10 @@ a:hover {
 	border-radius: 0px;
 }
 .btn:hover {
-	background: #DF6B00;
+	background: #ea00ff;
 }
 .btn-primary {
-	background: #FF7A00;
+	background: #ea00ff;
 }
 .form-control {
 	border-radius: 0px;
@@ -101,7 +101,7 @@ a:hover {
 	bottom: 20px;
 	right: 20px;
 	z-index: 5;
-	background: #FF7A00;
+	background: #ea00ff;
 }
 .topHome .fa-2x {
 	font-size: 20px;
@@ -125,8 +125,8 @@ h2 {
 	top: 0px;
 }
 .navbar-inverse .navbar-toggle {
-	border-color: #FF7A00;
-	background-color: #FF7A00;
+	border-color: #ea00ff;
+	background-color: #ea00ff;
 }
 .header .navbar {
 	margin: 0;
@@ -136,7 +136,7 @@ h2 {
 /*background-color: #FF7A00;*/;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background: #FF7A00;
+	background: #ea00ff;
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color: #fff;
@@ -151,7 +151,7 @@ h2 {
 	color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #FF7A00;
+	color: #ea00ff;
 	background: none;
 }
 .navbar-toggle {
@@ -192,13 +192,13 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 .actionPanel {
 	padding: 25px 0;
-	background: #FF7A00;
+	background: #ea00ff;
 }
 .actionPanel h3 {
 	margin: 0px;
 }
 .circle {
-	background: #FF7A00;
+	background: #ea00ff;
 	height: 60px;
 	width: 60px;
 	border-radius: 35px;
@@ -239,7 +239,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	border-radius: 5px;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #FF7A00;
+	color: #ea00ff;
 	background: none;
 }
 .navbar-nav > li:hover > a {
@@ -266,7 +266,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	font-weight: 200;
 }
 .page-section h2 {
-	color: #FF7A00;
+	color: #ea00ff;
 }
 .page-section p {
 	font-size: 1.1em;
@@ -276,7 +276,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	background: rgb(44, 44, 44);
 }
 .darkBg .fa {
-	color: #FF7A00;
+	color: #ea00ff;
 }
 /*--- Banner ----*/
 .banner-container {
@@ -383,7 +383,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 /*Intro Content*/
 #introText {
 	padding: 50px 0;
-	background: #FF7A00;
+	background: #ea00ff;
 }
 #introText h1 {
 	font-size: 40px;
@@ -519,7 +519,7 @@ min-height:200px;
 }
 .experience-details .icon-block i {
 	font-size: 60px;
-	color: #FF7A00;
+	color: #ea00ff;
 	margin: 8px 0 0;
 }
 .experience-details span {
@@ -567,7 +567,7 @@ min-height:200px;
 .team-member .member-img img {
 	max-width: 250px;
 	margin: 0 auto;
-	border: 1px solid #FF7A00;
+	border: 1px solid #ea00ff;
 }
 .team-member h4 {
 	font-size: 19px;
@@ -789,7 +789,7 @@ footer {
 	background: #fff;
 }
 .social a:hover {
-	color: #FF7A00;
+	color: #ea00ff;
 }
 .social a {
 	font-size: 23px;
@@ -1056,9 +1056,9 @@ nav#filter li {
 }
 
 @keyframes glow {
-    0% { text-shadow: 0 0 10px #FF7A00, 0 0 20px #FF7A00; }
+    0% { text-shadow: 0 0 10px #ea00ff, 0 0 20px #ea00ff; }
     50% { text-shadow: 0 0 20px #fff, 0 0 40px #FF7A00; }
-    100% { text-shadow: 0 0 10px #FF7A00, 0 0 20px #FF7A00; }
+    100% { text-shadow: 0 0 10px #ea00ff, 0 0 20px #ea00ff; }
 }
 .heroText h2 {
     animation: glow 2s infinite alternate;
