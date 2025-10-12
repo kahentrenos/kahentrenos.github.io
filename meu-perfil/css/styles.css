@@ -117,13 +117,26 @@ h2 {
 /* Header 
 ----------------------------------------------*/
 .header {
-	position: fixed;
-	width: 100%;
-	background: transpreant;
-	z-index: 50;
-	border-radius: 0;
-	top: 0px;
+    position: fixed;
+    width: 100%;
+    background: #000;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-bottom: 2px solid #000;
 }
+
+.banner-container {
+    margin-top: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    padding-top: 69px;
+}
+
 .navbar-inverse .navbar-toggle {
 	border-color: #ea00ff;
 	background-color: #ea00ff;
@@ -133,7 +146,7 @@ h2 {
 	background: transparent !important;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-/*background-color: #FF7A00;*/;
+/*background-color: #FF7A00;*/
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
 	background: #ea00ff;
@@ -151,7 +164,7 @@ h2 {
 	color: #FFFFFF;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-	color: #ea00ff;
+	color: #FF7A00;
 	background: none;
 }
 .navbar-toggle {
@@ -165,7 +178,7 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 /*.carousel-inner*/
 #myCarousel {
 	margin-top: 50px;
-	border-bottom: 4px solid #FF7A00;
+	border-bottom: 4px solid #ea00ff;
 }
 .carousel-inner > .item {
 }
