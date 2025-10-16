@@ -394,6 +394,41 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	padding: 60px 0;
 }
 /*Intro Content*/
+.cv-inline .btn-theme {
+  background-color: #000;
+  color: #ea00ff;
+  border: 2px solid #ea00ff;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.cv-inline .btn-theme:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+  box-shadow: 0 0 10px #fff;
+}
+/* === Botões personalizados: currículo + contato === */
+.cv-inline .btn-theme,
+#contactUs .btn-theme {
+  background-color: #000;       /* fundo preto */
+  color: #ea00ff;              /* texto rosa */
+  border: 2px solid #ea00ff;   /* borda rosa */
+  transition: all 0.3s ease;   /* transição suave */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hover: fundo branco, texto preto, leve brilho */
+.cv-inline .btn-theme:hover,
+#contactUs .btn-theme:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
 #introText {
 	padding: 50px 0;
 	background: #ea00ff;
