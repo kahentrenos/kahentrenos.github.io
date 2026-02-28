@@ -1130,7 +1130,7 @@ nav#filter li {
     );
     background-size: 300% 300%;
     animation: captionShimmer 6s ease infinite;
-    padding: 10px 34px;
+    padding: 10px 14px;
     border-radius: 2px;
     border-top: 1px solid rgba(255,255,255,0.35);
     border-bottom: 1px solid rgba(255,255,255,0.35);
