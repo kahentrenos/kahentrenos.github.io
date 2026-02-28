@@ -8,11 +8,15 @@ Author URI: http://webthemez.com/
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 }
+html {
+	overflow-x: hidden;
+}
 body {
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	background: #fff;
+	overflow-x: hidden;
 }
 ::selection {
 	color: #fff;
@@ -966,15 +970,22 @@ padding:0px 15px;
 }
 .heroText {
 margin-top: 30%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 .heroText h2{
 	font-size: 35px;
+	margin-bottom: 10px;
 }
 .heroText h2 span{
 	font-size: 35px;
 }
 .caption{
 	font-size: 14px;
+	padding: 5px 17px;
+	letter-spacing: 2px;
+	margin-top: 0;
 }
 .navbar-inverse .navbar-nav > li > a {
 	font-size: 0.9em;
@@ -1091,16 +1102,35 @@ nav#filter li {
     transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
+@keyframes captionShimmer {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .caption {
     font-size: 28px;
-    color: #FFD2A8;
-    text-shadow: 1px 2px 8px #000;
-    letter-spacing: 1.5px;
-    background: rgba(0,0,0,0.25);
-    padding: 8px 24px;
-    border-radius: 8px;
+    color: #fff;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.6);
+    letter-spacing: 4px;
+    background: linear-gradient(
+        270deg,
+        rgba(234, 0, 255, 0.65),
+        rgba(120, 0, 180, 0.7),
+        rgba(255, 122, 0, 0.55),
+        rgba(180, 0, 255, 0.65)
+    );
+    background-size: 300% 300%;
+    animation: captionShimmer 6s ease infinite;
+    padding: 10px 34px;
+    border-radius: 2px;
+    border-top: 1px solid rgba(255,255,255,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.35);
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 14px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 4px 24px rgba(180, 0, 255, 0.35), inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
 @keyframes glow {
@@ -1110,4 +1140,58 @@ nav#filter li {
 }
 .heroText h2 {
     animation: glow 2s infinite alternate;
+}
+
+/* ── Fancy heading effect ── */
+@keyframes textGradientFlow {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+.fancy-heading,
+.fancy-subheading {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #ea00ff, #FF7A00, #9b00e8, #ea00ff);
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textGradientFlow 5s linear infinite;
+    padding-bottom: 8px;
+}
+.fancy-heading::after,
+.fancy-subheading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ea00ff, #FF7A00, #ea00ff);
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(234, 0, 255, 0.7);
+}
+.fancy-heading.is-visible::after,
+.fancy-subheading.is-visible::after {
+    width: 100%;
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-80px);
+}
+.slide-in-left.is-visible {
+    animation: slideInLeft 0.8s ease forwards;
 }
