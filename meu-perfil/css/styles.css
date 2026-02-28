@@ -901,6 +901,13 @@ background: url(../images/bg2.png) top repeat;
 	height:400px;
 	
 }
+#aboutUs .col-md-4.tileBox {
+	text-align: center;
+}
+#aboutUs .col-md-4.tileBox img {
+	display: inline-block;
+	margin: 0 auto 20px;
+}
 .team-member .member-img img {
 	max-width: 100%;
 }
@@ -986,6 +993,7 @@ align-items: flex-start;
 	padding: 5px 17px;
 	letter-spacing: 2px;
 	margin-top: 0;
+	white-space: nowrap;
 }
 .navbar-inverse .navbar-nav > li > a {
 	font-size: 0.9em;
